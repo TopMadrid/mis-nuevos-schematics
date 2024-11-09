@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "customized-service",
+    "title": "Servicio Personalizado",
+    "type": "object",
+    "properties": {
+      "name": {
+        "description": "El nombre del servicio",
+        "type": "string"
+      },
+      "path": {
+        "description": "Ruta del archivo",
+        "type": "string",
+        "format": "path",
+        "x-prompt": "¿Dónde debe crearse el archivo?",
+        "default": "src/app/services"
+      }
+    },
+    "required": ["name"]
+  }

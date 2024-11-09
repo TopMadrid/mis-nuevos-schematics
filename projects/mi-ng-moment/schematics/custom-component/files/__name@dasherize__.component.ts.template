@@ -1,0 +1,18 @@
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'cc-<%= dasherize(name) %>',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './<%= dasherize(name) %>.component.html',  
+  styleUrl: './<%= dasherize(name) %>.component.css',
+})
+export class <%= classify(name) %>CustomComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+    // Initialization logic here
+  }
+}

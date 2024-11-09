@@ -1,0 +1,25 @@
+{
+    "$schema": "../../../node_modules/@angular-devkit/schematics/collection-schema.json",
+    "schematics": {
+        "ng-add": {
+            "description": "Añade dependencia de moment al proyecto",
+            "factory": "./ng-add/index#ngAdd"
+        },
+        "custom-component": {
+            "description": "Crea un componente personalizado",
+            "factory": "./custom-component/index#customComponentGenerator",
+            "schema": "./custom-component/schema.json",
+            "aliases": [
+                "cc"
+            ]
+        },
+        "customized-service": {
+            "description": "Genera un servicio personalizado",
+            "factory": "./customized-service/index#main",
+            "schema": "./customized-service/schema.json",
+            "aliases": [
+                "cs"
+            ]
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "custom-component",
+    "title": "Schema del Custom Component",
+    "type": "object",
+    "properties": {
+      "name": {
+        "description": "Nombre del componente personalizado",
+        "type": "string"
+      },
+      "path": {
+        "description": "Ruta donde crear el nuevo componente personalizado",
+        "type": "string",
+        "format": "path",
+        "x-prompt": "¿Dónde quieres que se genere el componente?",
+        "default": "src/app"
+      }
+    },
+    "required": []
+  }
+  
